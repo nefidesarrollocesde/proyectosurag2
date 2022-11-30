@@ -72,7 +72,7 @@
 
                 <div class="row">
                   <div class="col-12">
-                    <select class="form-select">
+                    <select class="form-select" id="especialidad">
                       <option selected>Especialidad</option>
                       <option value="1">Ortopedia</option>
                       <option value="2">Cirugía general</option>
@@ -87,20 +87,20 @@
                   <div class="col-12 col-md-6">
                     <div class="input-group mb-3">
                       <span class="input-group-text" id="basic-addon1"><i class="bi bi-card-text"></i></span>
-                      <input type="text" class="form-control" placeholder="Registro profesional">
+                      <input type="text" class="form-control" placeholder="Registro profesional" id="registroprofesional">
                     </div>
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="input-group mb-3">
                       <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
-                      <input type="text" class="form-control" placeholder="Correo electronico">
+                      <input type="text" class="form-control" placeholder="Correo electronico" id="correo">
                     </div>
                   </div>
                 </div>
                 
                 <div class="row">
                   <div class="col-12 col-md-6">
-                    <select class="form-select">
+                    <select class="form-select" id="sede">
                       <option selected>Sede</option>
                       <option value="1">Sura Molinos</option>
                       <option value="2">Sura Industriales</option>
@@ -111,7 +111,7 @@
 
                   </div>
                   <div class="col-12 col-md-6">
-                    <select class="form-select">
+                    <select class="form-select" id="horario">
                       <option selected>Horario</option>
                       <option value="1">06:00-14:00</option>
                       <option value="2">14:00-22:00</option>
@@ -124,7 +124,7 @@
                 <div class="row mt-3">
                   <div class="col-12">
                     <div class="form-floating">
-                      <textarea class="form-control" placeholder="Descripción general" id="floatingTextarea"></textarea>
+                      <textarea class="form-control" placeholder="Descripción general" id="descripcion"></textarea>
                       <label for="floatingTextarea">Descripción</label>
                     </div>
                   </div>
@@ -136,7 +136,7 @@
                   <div class="col-12">
                     <div class="input-group mb-3">
                       <span class="input-group-text" id="basic-addon1"><i class="bi bi-camera"></i></span>
-                      <input type="text" class="form-control" placeholder="Foto del especialista">
+                      <input type="text" class="form-control" placeholder="Foto del especialista" id="foto">
                     </div>
                   </div>
                 </div>
@@ -157,7 +157,7 @@
   <script>
     new WOW().init();
   </script>
-  <script src="../controllers/controladormedicos.js"></script>
+  <script src="../controllers/controladormedicos.js" type="module"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
