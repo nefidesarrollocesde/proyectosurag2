@@ -63,7 +63,7 @@
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-person"></i></span>
-                                            <input type="text" class="form-control" placeholder="Nombres">
+                                            <input type="text" class="form-control" placeholder="Nombres" id="nombrePaciente">
                                         </div>
                                     </div>
 
@@ -71,7 +71,7 @@
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-person"></i></span>
-                                            <input type="text" class="form-control" placeholder="Apellidos">
+                                            <input type="text" class="form-control" placeholder="Apellidos" id="apellidoPaciente">
                                         </div>
                                     </div>
                                 </div>
@@ -82,11 +82,11 @@
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-credit-card-2-front"></i></span>
                                             <input type="text" class="form-control"
-                                                placeholder="Documento de identidad">
+                                                placeholder="Documento de identidad" id="documentoPaciente">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <select class="form-select">
+                                        <select class="form-select" id="regimen">
                                             <option selected>Régimen</option>
                                             <option value="1">Contributivo</option>
                                             <option value="2">Subsidiado</option>
@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12 col-md-6">
-                                        <select class="form-select">
+                                        <select class="form-select" id="grupoIngresos">
                                             <option selected>Grupo de ingresos</option>
                                             <option value="1">A</option>
                                             <option value="2">B</option>
@@ -103,7 +103,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <select class="form-select">
+                                        <select class="form-select" id="cuotaModeradora">
                                             <option selected>Cuota moderadora</option>
                                             <option value="1">3.700</option>
                                             <option value="2">14.700</option>
@@ -118,14 +118,14 @@
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-telephone"></i></span>
-                                            <input type="text" class="form-control" placeholder="Teléfono">
+                                            <input type="text" class="form-control" placeholder="Teléfono" id="telefonoPaciente">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-envelope"></i></span>
-                                            <input type="text" class="form-control" placeholder="Correo">
+                                            <input type="text" class="form-control" placeholder="Correo" id="correoPaciente">
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                                <button type="submit" class="btn btn-primary w-100" id="botonenvioPaciente">Enviar</button>
                             </form>
                         </div>
                     </div>
@@ -214,6 +214,8 @@
     <script>
         new WOW().init();
     </script>
+    <script src="../controllers/controladorpacientes.js" type="module"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

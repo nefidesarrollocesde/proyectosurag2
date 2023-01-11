@@ -33,4 +33,6 @@ export function validarFormulario(datos){
         etiquetaDocumento.classList.remove("is-invalid")
     }
 
+    console.log(datos)
+
 }
